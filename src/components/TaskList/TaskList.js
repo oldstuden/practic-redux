@@ -16,7 +16,7 @@ const getVisibleTasks = (tasks, statusFilter) => {
 };
 export const TaskList = () => {
   // Get array tasks from state Redux
-  const tasks = useSelector(state => getTasks);
+  const tasks = useSelector(getTasks);
   // Get value filter from state Redux
   const statusFilter = useSelector(getStatusFilter);
   // Calculation array tasks which need to be displayed in the interface
